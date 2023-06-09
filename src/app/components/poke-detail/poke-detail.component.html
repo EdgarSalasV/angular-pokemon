@@ -1,0 +1,42 @@
+<div class="card-container">
+  <mat-card class="card" *ngIf="pokemon">
+    <mat-card-header>
+      <img mat-card-avatar class="header-image" src="{{ pokemon.image }}" />
+      <mat-card-title>{{ pokemon.name }}</mat-card-title>
+      <mat-card-subtitle>N°{{ pokemon.id }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ pokemon.image }}" alt="Pokemon" />
+    <mat-card-content>
+      <mat-chip-listbox>
+        <mat-chip>{{ pokemon.type.toUpperCase() }}</mat-chip>
+        <mat-chip>{{ pokemon.height }} M</mat-chip>
+        <mat-chip>{{ pokemon.weight }} KG</mat-chip>
+      </mat-chip-listbox>
+    </mat-card-content>
+    <button
+      class="favority-button"
+      (click)="saveFavorityPokemon()"
+      *ngIf="!isFavority"
+    >
+      <img
+        src="../../../assets/images/icons/heart-solid-gray.svg"
+        width="30"
+        height="30"
+        alt="Agregar a favoritos"
+      />
+    </button>
+
+    <button
+      *ngIf="isFavority"
+      class="favority-button"
+      (click)="removeFavorityPokemon()"
+    >
+      <img
+        src="../../../assets/images/icons/heart-solid.svg"
+        width="30"
+        height="30"
+        alt="Agregar a favoritos"
+    />
+    </button>
+  </mat-card>
+</div>

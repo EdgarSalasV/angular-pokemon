@@ -1,0 +1,17 @@
+.home-wrapper {
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+  .home-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home-wrapper {
+    max-width: 90%;
+  }
+}

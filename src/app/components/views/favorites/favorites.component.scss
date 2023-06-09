@@ -1,0 +1,17 @@
+.favorites-wrapper {
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+  .favorites-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .favorites-wrapper {
+    max-width: 90%;
+  }
+}

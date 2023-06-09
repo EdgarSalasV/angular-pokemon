@@ -1,0 +1,42 @@
+@import "../../../assets/styles/variables.scss";
+
+.card-container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  padding: 20px;
+  position: relative;
+}
+
+.header-image {
+  background-size: cover;
+}
+
+mat-card-header {
+  background-color: $white;
+  border-radius: 10px;
+}
+
+mat-card-title {
+  text-transform: uppercase;
+  color: black;
+}
+
+mat-chip {
+  background-color: $white !important;
+}
+
+.favority-button {
+  top: 0px;
+  right: -50px;
+  background: none;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
